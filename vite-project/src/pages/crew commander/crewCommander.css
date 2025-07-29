@@ -1,0 +1,132 @@
+body,
+html {
+  min-height: 100vh;
+  background: url("/assets/crew/background-crew-desktop.jpg") no-repeat center
+    center fixed;
+  background-size: cover;
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-bar img {
+  width: 40px;
+}
+
+.nav-bar hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 0 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.nav-links button:hover,
+.nav-links button.active {
+  border-bottom: 2px solid white;
+}
+
+.crew-selection {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.crew-selection h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.crew-member {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Semi-transparent background for card effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crew-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.crew-details {
+  flex: 1;
+  padding: 10px;
+}
+
+.crew-role {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.crew-name {
+  font-size: 2rem;
+  margin: 0 0 15px 0;
+}
+
+.crew-bio {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.crew-image {
+  flex: 1;
+  text-align: center;
+}
+
+.crew-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px; /* Rounded corners for image */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .crew-member {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .crew-image {
+    margin-top: 20px;
+  }
+
+  .crew-img {
+    max-height: 250px;
+  }
+}

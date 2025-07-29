@@ -1,0 +1,106 @@
+.background {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  font-size: 28px;
+  letter-spacing: 4.75px;
+  color: white;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.destination-location {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.destination-location button {
+  background: none;
+  border: none;
+  color: #d0d6f9;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  transition: all 0.3s ease;
+}
+
+.destination-location button.active,
+.destination-location button:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.destination-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.destination-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.destination-details {
+  max-width: 500px;
+  column-rule: white;
+}
+
+.destination-details h2 {
+  font-size: 80px;
+  margin: 0 0 20px 0;
+}
+
+.destination-details p {
+  color: #d0d6f9;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.destination-details hr {
+  border: 1px solid #383b4b;
+  margin-bottom: 20px;
+}
+
+.destination-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.destination-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.destination-stats h3 {
+  font-size: 14px;
+  letter-spacing: 2.36px;
+  color: #d0d6f9;
+}
+
+.destination-stats p {
+  font-size: 28px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .destination-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .destination-stats {
+    justify-content: center;
+  }
+}
