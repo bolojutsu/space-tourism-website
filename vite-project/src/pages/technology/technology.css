@@ -87,7 +87,6 @@
 }
 
 .header::before {
-  content: "03";
   font-size: 1.5rem;
   color: #d0d6f9;
   position: absolute;

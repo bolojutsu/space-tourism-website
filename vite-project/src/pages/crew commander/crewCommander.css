@@ -49,29 +49,27 @@ html {
   padding: 40px;
   max-width: 1200px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
 .crew-selection h1 {
   font-size: 2.5rem;
   text-transform: uppercase;
   margin-bottom: 40px;
+  grid-column: span 2;
 }
 
 .crew-member {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
-  background: rgba(
-    255,
-    255,
-    255,
-    0.1
-  ); /* Semi-transparent background for card effect */
+  background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -81,7 +79,7 @@ html {
 }
 
 .crew-details {
-  flex: 1;
+  text-align: center;
   padding: 10px;
 }
 
@@ -104,29 +102,29 @@ html {
 }
 
 .crew-image {
-  flex: 1;
   text-align: center;
+  margin-top: 20px;
 }
 
 .crew-img {
   max-width: 100%;
   height: auto;
-  max-height: 300px;
-  border-radius: 8px; /* Rounded corners for image */
+  max-height: 250px;
+  border-radius: 8px;
 }
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
-  .crew-member {
-    flex-direction: column;
-    text-align: center;
+  .crew-selection {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 
-  .crew-image {
-    margin-top: 20px;
+  .crew-selection h1 {
+    grid-column: span 1;
   }
 
   .crew-img {
-    max-height: 250px;
+    max-height: 200px;
   }
 }
