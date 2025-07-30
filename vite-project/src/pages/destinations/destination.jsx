@@ -1,3 +1,4 @@
+import Header from '../../components/header.jsx';
 import './destination.css';
 import destinationData from '../../data.json';
 import { useState } from 'react';
@@ -21,22 +22,7 @@ function Destination({ setCurrentPage }) {
 
     return (
         <div className='background'>
-            <nav className="nav-bar">
-                <img src="/assets/shared/logo.svg" alt="" />
-                <hr />
-                <div className='nav-links'>
-                    <button onClick={() => setCurrentPage('home')}>00 Home</button>
-                    <button onClick={() => setCurrentPage('destination')}>
-                        01 Destination
-                    </button>
-                    <button onClick={() => setCurrentPage('crew-commander')}>
-                        02 Crew
-                    </button>
-                    <button onClick={() => setCurrentPage('technology')}>
-                        03 Technology
-                    </button>
-                </div>
-            </nav>
+            <Header />
 
             <div className="header">
                 PICK YOUR DESTINATION
