@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .nav-bar {
   display: flex;
   align-items: center;
@@ -143,6 +144,33 @@
   background: white;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.crew-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.crew-navigation button {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.crew-navigation button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  color: white;
+  transform: scale(1.05);
 }
 
 /* Responsive design for smaller screens */
