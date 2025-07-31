@@ -19,10 +19,10 @@ function Destination({ setCurrentPage }) {
     }
 
     return (
-        <div className='background'>
+        <div className='destination-background'>
             <Header setCurrentPage={setCurrentPage} />
 
-            <div className="header">
+            <div className="destination-header">
                 PICK YOUR DESTINATION
             </div>
 

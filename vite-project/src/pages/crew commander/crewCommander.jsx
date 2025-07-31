@@ -15,7 +15,7 @@ function CrewCommander({ setCurrentPage }) {
     }
 
     return (
-        <div className="background">
+        <div className="crew-background">
             <Header setCurrentPage={setCurrentPage} />
 
             <div className="crew-selection">

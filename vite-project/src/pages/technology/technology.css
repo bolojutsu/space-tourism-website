@@ -6,9 +6,10 @@
 }
 
 /* Background and general layout */
-.background {
+.tech-background {
   min-height: 100vh;
-  background: url("/assets/background-stars.jpg") no-repeat center center/cover;
+  background: url("/assets/technology/background-technology-desktop.jpg")
+    no-repeat center center/cover;
   color: #fff;
   font-family: "Arial", sans-serif;
   padding: 2rem;
@@ -76,10 +77,11 @@
 }
 
 /* Header */
-.header {
+.tech-header {
   font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
+  margin-top: 15%;
   margin-bottom: 4rem;
   color: #d0d6f9;
   text-transform: uppercase;

@@ -8,7 +8,7 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.background {
+.home-background {
   background-image: url("/assets/home/background-home-desktop.jpg");
   background-size: cover;
   height: 100vh;
@@ -83,7 +83,7 @@ img {
   position: relative;
 }
 
-.main-section {
+.home-main-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -92,7 +92,7 @@ img {
   padding: 4.5rem;
 }
 
-.header-background {
+.home-header-background {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -100,7 +100,7 @@ img {
   gap: 1rem;
 }
 
-.header {
+.home-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,22 +109,22 @@ img {
   gap: 1rem;
 }
 
-.p1 {
+.home-p1 {
   padding-right: 50px;
   font-size: 1.4rem;
 }
 
-.p2 {
+.home-p2 {
   font-size: 7rem;
   letter-spacing: 1rem;
 }
 
-.sub-header {
+.home-sub-header {
   width: 50%;
   color: rgb(214, 208, 208);
 }
 
-.explore {
+.home-explore {
   background-color: white;
   color: black;
   width: 250px;
