@@ -1,10 +1,10 @@
 import Header from '../../components/header.jsx';
 import './home.css'
-function Home() {
+function Home({setCurrentPage}) {
     return (
         <>
             <div className="background">
-                <Header />
+                <Header setCurrentPage={setCurrentPage}/>
 
                 <div className="main-section">
                     <div className="header-background">
