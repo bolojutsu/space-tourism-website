@@ -1,5 +1,6 @@
 import crewData from '../../data.json'
 import './crewCommander.css'
+import Header from '../../components/header.jsx'
 import { useState } from 'react';
 function CrewCommander({ setCurrentPage }) {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,7 +16,7 @@ function CrewCommander({ setCurrentPage }) {
 
     return (
         <div className="background">
-            <Header />
+            <Header setCurrentPage={setCurrentPage} />
 
             <div className="crew-selection">
                 <h1>02 MEET YOUR CREW</h1>

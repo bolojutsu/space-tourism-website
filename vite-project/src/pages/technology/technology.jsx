@@ -18,7 +18,7 @@ function Technology({ setCurrentPage }) {
 
     return (
         <div className="background">
-            <Header />
+            <Header setCurrentPage={setCurrentPage} />
 
             <div className="header">
                 SPACE LAUNCH 101
