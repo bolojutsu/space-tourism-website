@@ -20,8 +20,6 @@ function Destination({ setCurrentPage }) {
 
     return (
         <div className='destination-background'>
-            <Header setCurrentPage={setCurrentPage} />
-
             <div className="destination-header">
                 PICK YOUR DESTINATION
             </div>

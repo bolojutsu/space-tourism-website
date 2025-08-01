@@ -4,8 +4,6 @@ function Home({ setCurrentPage }) {
     return (
         <>
             <div className="home-background">
-                <Header setCurrentPage={setCurrentPage} />
-
                 <div className="home-main-section">
                     <div className="home-header-background">
                         <div className="home-header">

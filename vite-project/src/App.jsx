@@ -3,6 +3,7 @@ import CrewCommander from './pages/crew commander/crewCommander.jsx'
 import Destination from './pages/destinations/destination.jsx';
 import Technology from './pages/technology/technology.jsx';
 import { useState } from 'react'
+import Header from './components/header.jsx';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -19,7 +20,15 @@ function App() {
         return <Technology setCurrentPage={setCurrentPage} />
     }
   }
-  return <div>{renderPage()}</div>
+  return (
+    <>
+      <div >
+        <Header setCurrentPage={setCurrentPage} />
+        {renderPage()}
+      </div >
+    </>
+
+  )
 }
 
 export default App

@@ -18,8 +18,6 @@ function Technology({ setCurrentPage }) {
 
     return (
         <div className="tech-background">
-            <Header setCurrentPage={setCurrentPage} />
-
             <div className="tech-header">
                 SPACE LAUNCH 101
             </div>
