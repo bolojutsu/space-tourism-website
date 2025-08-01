@@ -111,17 +111,9 @@
   .background {
     padding: 1rem;
   }
-
-  .nav-bar {
-    flex-direction: column;
-    gap: 1rem;
+  .tech-header {
+    margin-top: 30%;
   }
-
-  .nav-links {
-    justify-content: center;
-    gap: 1rem;
-  }
-
   .technology-content {
     flex-direction: column;
     text-align: center;
